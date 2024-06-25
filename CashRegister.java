@@ -27,45 +27,45 @@ public class CashRegister {
 				// 1.25
 
 				// notify the cashier on the type of currency needed for the change
-				double twenties = change / 20;
+				int twenties = (int)(change / 20);
 				if (twenties >= 1) {
 					change = change % 20;
 					System.out.println("Cashier: Hand the customer " + Math.round(twenties) + " $20 Bills");
 				}
-				double tens = change / 10;
+				int tens = (int)(change / 10);
 				if (tens >= 1) {
 					change = change % 10;
 					System.out.println("Cashier: Hand the customer " + Math.round(tens) + " $10 Bills");
 				}
-				double fives = change / 5;
+				int fives = (int)(change / 5);
 				if (fives >= 1) {
 					change = change % 5;
 					System.out.println("Cashier: Hand the customer " + Math.round(fives) + " $5 Bills");
 				}
-				double ones = change / 1;
+				int ones = (int)(change / 1);
 				if (ones >= 1) {
 					change = change % 1;
 					System.out.println("Cashier: Hand the customer " + Math.round(ones) + " $1 Bills");
 				}
-				double quarters = change / .25;
+				int quarters = (int)(change / .25);
 				if (quarters >= 1) {
 					change = change % .25;
 					System.out.println("Cashier: Hand the customer " + Math.round(quarters) + " Quarters");
 				}
-				double dimes = change / .10;
+				int dimes = (int)(change / .10);
 
 				if (dimes >= 1) {
 					change = change % .10;
 					System.out.println("Cashier: Hand the customer " + Math.round(dimes) + " Dimes");
 				}
 
-				double nickles = change / .5;
+				int nickles = (int)(change / .5);
 				if (nickles >= 1) {
 					change = change % .05;
 					System.out.println("Cashier: Hand the customer " + Math.round(nickles) + " Nickles");
 
 				}
-				double pennies = change / .01;
+				int pennies = (int)(change / .01);
 
 				if (pennies >= 1) {
 					change = change % .01;
